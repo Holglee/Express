@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+	<meta charset="UTF-8">
+	<title>告白</title>
+	<link rel="stylesheet"   href="style/style.css" >
+</head>
+<body>
+	<!-- audio -->
+	<audio id="audio" src="audio/告白氣球.m4a" controls autoplay></audio>
+	<!-- 题目 -->
+	<div class="title" id="title">
+		<h1>
+			<span class="span1">我</span>
+			<span class="span2">喜</span>
+			<span class="span3">欢</span>
+			<span class="span4">你</span>
+		</h1>
+	</div>
+	<!-- 左右控制 -->
+	<a href="#" id="pre">上一页</a>
+	<a href="#" id="next">下一页</a>
+	<!-- 页码标识 -->
+	
+	<!-- 第一页 -->
+	<div class="contianer clearfix" id="contianer">
+	<div class='page' id="page1">
+	<div class="img img1"><img src="image/12107049_125959255179_2.jpg" alt=""><div class="son"></div><h1>我</h1></div>
+	<div class="img img2"><img src="image/3320946_194805002303_2.jpg" alt=""><div class="son"></div><h1>喜</h1></div>
+	<div class="img img3"><img src="image/3320946_184657569974_2.jpg" alt=""><div class="son"></div><h1>欢</h1></div>
+	<div class="img img4"><img src="image/17961491_075821037000_2.jpg" alt=""><div class="son"></div><h1>你</h1></div>
+	</div>
+	<!-- 第二页 -->
+	<div class='page' id="page2">
+		<p>我要告诉你的秘密就是：那天之后我一整天脑子里几乎都是你。我想我是恋爱了。</p>
+		<p>那天见到你，跟小时候的感觉有相同的：看到你我就觉得我好像沉浸在另外一个环境中，左边大脑也不工作了，大部分精力都在你身上；</p>
+		<p>我猜那天差点送错人也是因为这个，一定是下了车左脑没有帮我认路。</p>
+		<p>也有不同的：我想如果是小时候我一定会心跳加速的；现在也许是成熟了些，看到你我觉得很舒服，心情很好。</p>
+		<p>你没看出来那是因为当天我很克制。</p>
+	</div>
+	<!-- 第三页 -->
+	<div class='page' id="page3">
+		<p>所以即使你还没有答应我依然把你当成我的女朋友了，怎么办？</p>
+		<p>你愿意吗？</p>
+		<a href="#">我愿意</a>
+		<a href="#">拒绝</a>
+	</div>
+	<!-- 第四页 -->
+	<div class='page' id="page4">
+		<p>开个玩笑，嘿嘿。</p>
+		<p>那天我确实表现不好，一度冷场，但是我并没有觉得很尴尬，因为有心理准备，不知道你是不是也是这样的呢？</p>
+		<p>上次只是我们见面的序幕，为后面做铺垫。</p>
+		<p>下次我约你出来你也许还是会难为情，但我想一定会好很多了。</p>	
+		<p>元旦约吗？:)</p>
+		<img src="image/12107049_125959255179_2.jpg" alt="">
+	</div>
+		
+	</div>
+	<script>
+		window.onload=function () {
+			var page3=document.getElementById('page3');
+			var a=page3.getElementsByTagName('a');
+			var a2=a[1];
+			var title=document.getElementById("title");
+			var pre=document.getElementById("pre");
+			var next=document.getElementById("next");
+			var contianer=document.getElementById("contianer");
+			var conHeight=contianer.offsetHeight;
+			var audio=document.getElementById("audio");
+			var index=1;
+			a2.onmouseover=function(){
+				this.innerHTML="我愿意";
+			}
+			a2.onmouseout=function(){
+				this.innerHTML="拒绝";
+			}
+			for (var i = 0; i < a.length; i++) {
+				a[i].onclick=function(){
+				alert("我就知道你不会拒绝的");
+				return false;
+				}
+			}
+			next.onclick=function(){
+				var dex=index;
+				index++;
+				if (index==5) {index=1}
+				showPage(index,dex);
+				return false;
+			}
+			pre.onclick=function(){
+				var dex=index;
+				index--;
+				if (index==0) {index=4}
+				showPage(index,dex);
+				return false;
+			}
+		}
+		function showPage(index,dex){
+				var idIndex1="page"+index;
+				var idIndex2="page"+dex;
+				var pageIndex1=document.getElementById(idIndex1);
+				var pageIndex2=document.getElementById(idIndex2);
+				pageIndex1.style.display="block";
+				pageIndex2.style.display="none";
+				if (index!=1) {title.style.display="block";} else {title.style.display="none";}
+		}
+	</script>
+</body>
+
+</html>
