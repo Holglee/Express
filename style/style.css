@@ -35,7 +35,7 @@ ul{list-style: none;
 #page2,
 #page3,
 #page4,
-#page5{display: none;overflow: hidden;
+#page5{display: none;
 }
 #page4 img{margin-top: 20px;margin-left: -10px;float: left;
 }
@@ -58,7 +58,7 @@ ul{list-style: none;
 /*p{line-height: 26px;border-bottom: 1px solid #666699;text-indent: 20px;width: 350px;font-weight: bold;color: #009999;margin:20px 0 0 10px;box-shadow: 2px 2px 4px #699;}*/
 }
 /*第二页*/
-a{display: inline-block;text-align: center;width: 100px;margin-top: 40px;margin-right: 20px;line-height: 30px;border: 1px solid #666699;box-shadow: 2px 2px 4px #699;border-radius: 5px;font-weight: bold;color: #009999;
+a{display: inline-block;text-align: center;width: 100px;margin-top: 40px;margin-right: 20px;line-height: 30px;border: 1px solid #666699;box-shadow: 2px 2px 4px #699;border-radius: 5px;font-weight: bold;color: #009999;background-color:#c7d0d5;
 }
 a:hover{background-color: #c60;color: #fff;
 }
