@@ -1,104 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
 	<meta charset="UTF-8">
 	<title>不是告白</title>
-	<link rel="stylesheet"   href="style/style.css" >
+	<!-- <link rel="stylesheet"   href="style/style.css" > -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./favicon.ico" rel="icon" type="image/x-icon" />
+
+	<link rel="stylesheet" href="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<script src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+	<style>
+	div[data-role="footer"]{
+		position: fixed;
+		width: 100%;
+		bottom: 0px;
+		display: flex;
+		justify-content: space-around;
+	}
+	</style>	
 </head>
 <body>
 	<!-- audio -->
 	<!-- <audio id="audio" src="audio/李健 - 抚仙湖.mp3"  autoplay loop="loop"></audio> -->
 
-	<audio id="audio" src="audio/-寞笙- - 编曲作业 NO.2.mp3"  autoplay loop="loop"></audio>
+	<!-- <audio id="audio" src="audio/-寞笙- - 编曲作业 NO.2.mp3"  autoplay loop="loop"></audio> -->
 	<!-- 题目 -->
-	<div class="title" id="title">
-		<h1>
-			<span class="span1">这</span>
-			<span class="span2">是</span>
-			<span class="span3">空</span>
-			<span class="span4">白</span>
-		</h1>
-	</div>
-	<!-- 左右控制 -->
-	<a href="#" id="pre">PRE</a>
-	<a href="#" id="next">NEXT</a>
-	<!-- 页码标识 -->
 	
 	<!-- 第一页 -->
-	<div class="contianer clearfix" id="contianer">
-	<div class='page' id="page1">
-	<div class="img img1"><img src="image/12107049_125959255179_2.jpg" alt=""><div class="son"></div><h1>请</h1></div>
-	<div class="img img2"><img src="image/3320946_194805002303_2.jpg" alt=""><div class="son"></div><h1>翻</h1></div>
-	<div class="img img3"><img src="image/3320946_184657569974_2.jpg" alt=""><div class="son"></div><h1>下</h1></div>
-	<div class="img img4"><img src="image/17961491_075821037000_2.jpg" alt=""><div class="son"></div><h1>页</h1></div>
+	<div data-role="page" id="page1" data-theme="b">
+ 	 	<div data-role="header">
+   			<h1>“多么难忘，是你纯真的模样”</h1>
+		</div>
+	   <div data-role="content">
+			<p>每逢四月，二次元就像过节一样，然而以后四月对我来说又多了一层含义，原来<a href="http://www.bilibili.com/video/av9500345/?tg">=&gt没有你的四月又来了&lt=</a>是这个意思啊！</p>
+			<p>“多么难忘，是你纯真的模样。”<br>
+			“多少恍惚的时候，仿佛看见你在人海川流，隐约中你已浮现，一转眼又不见。”<br>
+			喜欢的很多歌里面都会出现你的样子，思绪会以各种奇妙的电路通向你。去吃黄焖鸡会想到你慢慢吃东西的样子，路过跳蹬河也会想想你是不是在你姐姐那里呢。想删掉本地和云端的照片，可我怎么可能下得去手？应该怎么办？
+			当然是选择再争取一次啊！</p>
+			<p>我有个想法:我们本来约定像同学一样相处就好了，可是我们两个都没有遵守这个约定。我总是试图突破这层同学关系，可越是这样就越谨慎克制，不知不觉间就和你刻意保持着距离，让你我都觉得不自在。你就不怎么理我，我就生你的气。</p>
+			<p>所谓的性格不合会不会就是由于我试图越界造成的假象呢？因为我始终相信如果我能放下一些想法我是可以好好和你相处的。如果因为这个美丽的错误，让我多年之后回过头看发现错过了正确的人，不想那时候才后悔莫及。所以无论如何，我都要再争取一次机会！</p>
+	    </div>
+	    <div data-role="footer">
+	     	<a href="#" data-theme="b">PRE</a>
+			<a href="#page2" data-transition="slide" class="ui-btn ui-btn-b">NEXT</a>	
+	    </div>
 	</div>
-	<!-- 第二页 -->
-	<div class='page' id="page2">
-		<p>每逢四月，二次元就像过节一样，然而以后四月对我来说又多了一层含义，原来<a href="http://www.bilibili.com/video/av9500345/?tg">=&gt没有你的四月又来了&lt=</a>是这个意思啊！</p>
-		<p>即使现在你还是会闯进我的梦中，我想删掉本地和云端的照片，却怎么也下不去手，我清楚我还是放不下。我有个想法:我们本来约定像同学一样相处就好了，可是我们两个都没有遵守这个约定。我总是试图突破这层同学关系，可越是这样就越谨慎克制，不知不觉间就和你刻意保持着距离，让你我都觉得不自在。你就不怎么理我，我就生你的气。</p>
-		<p>所谓的性格不合会不会就是由于我试图越界造成的假象呢？因为我始终相信如果我能放下一些想法我是可以好好和你相处的。如果因为这个美丽的错误，让我多年之后回过头看发现错过了正确的人，不想那时候才后悔莫及。所以无论如何，我都要再争取一次机会！</p>
+	<div data-role="page"  id="page2" data-theme="b">
+ 	 	<div data-role="header">
+   			<h1>争取</h1>
+		</div>
+	   <div data-role="content">
+			<p>你大可以毫不顾忌地拒绝我，不过我还是想试图说服你:你同意并不意味着我们一定要在一起，只是重新赋予我目前已经被剥夺的、喜欢你追求你的权利。<br/>
+			最可悲的事莫过于还没入局就已经出局了，我之前只不过是表明了自己喜欢你的心意，但还是希望能像同学一样相处，同时让你为我保留一份机会，然而我还没来得及利用这个机会就已经退出，显得有些残酷。<br/>
+			也许你同意之后我仍然不会太主动，正如你所说我还不成熟，你也没有做好准备，更重要的是我们之间需要更多的时间去磨合。我会试着努力去寻找我们之间正常相处的平衡点，那也是需要时间的。但相信我，我不会让你等太久的，最迟年底，我一定会亲口在你面前说出那句“做我女朋友好吗？”。</p>
+			<p>实际上对于我们之间的不自在感我是能够坦然接受的，因为这正是我们需要时间去磨合的原因！也许你从一开始就不明白我的打算，才会试图把我当成你的男朋友，所以这种不自在带给你的阻力会比我大得多。回想一下，我们从北站相见到现在，除去在火车上和看电影的时间大概连20个小时都不到吧，真正单独相处交流大概也只有我第一次来郫县看你那回了吧，其余单独相处的时间几乎都是在一种非正常状态下！专业的面试官也需要更长的时间才能准确判断一个人呢。</p>
+	    </div>
+	    <div data-role="footer">
+	     	<a href="#page1" data-transition="slide">PRE</a>
+			<a href="#page3" data-transition="slide">NEXT</a>
+	    </div>
 	</div>
-	<!-- 第三页 -->
-	<div class='page' id="page3">
-		<p>你大可以毫不顾忌地拒绝我，不过我还是想试图说服你:你同意并不意味着我们一定要在一起，只是重新赋予我目前已经被剥夺的、喜欢你追求你的权利。</p>
-		<p>最可悲的事莫过于还没入局就已经出局了，我之前只不过是表明了自己喜欢你的心意，但还是希望能像同学一样相处，同时让你为我保留一份机会，然而我还没来得及利用这个机会就已经退出，显得有些残酷。</p>
-		<p>也许你同意之后我仍然不会太主动，正如你所说我还不成熟，你也没有做好准备，更重要的是我们之间需要更多的时间去磨合。我会试着努力去寻找我们之间正常相处的平衡点，那也是需要时间的。但相信我，我不会让你等太久的，最迟年底，我一定会亲口在你面前说出那句“做我女朋友好吗？”。</p>
-		<p>实际上对于我们之间的不自在感我是能够坦然接受的，因为这正是我们需要时间去磨合的原因！也许你从一开始就不明白我的打算，才会试图把我当成你的男朋友，所以这种不自在带给你的阻力会比我大得多。回想一下，我们从北站相见到现在，除去在火车上和看电影的时间大概连20个小时都不到吧，真正单独相处交流大概也只有我第一次来郫县看你那回了吧，其余单独相处的时间几乎都是在一种非正常状态下！专业的面试官也需要更长的时间才能准确判断一个人呢。</p>
-	</div>
-					
-<!-- 第四页 -->
-	<div class='page' id="page5">
-		<p>实际上对于我们之间的不自在感我是能够坦然接受的，因为那正是需要时间去磨合的啊！想想看，我们从北站相见到现在，除去在火车上和看电影的时间大概连20个小时都不到吧！反倒是你，也许从一开始就不明白我的打算，才会试图把我当成你的男朋友，所以这种不自在带给你的阻力会比我大得多。</p>
-	</div>
-	<div class='page' id="page4">
-		<p>多少恍惚的时候，仿佛看见你在人海川流，隐约中你已浮现，一转眼又不见。</p>
-		<p>茫茫人海遇到一个让我恋恋不忘的人不容易，不想轻易错过。</p>
-		<p>难道我们在一起丝毫不能唤醒你的温柔的一面吗？至少我愿意相信有那么一刻我有很强烈的想靠你更近的想法。</p>
-		<p>无论是如愿以偿还是希望破灭，一定有什么东西永不消逝。</p>
-		<p>你会再给我喜欢你的权利吗，愿意再给我半年时间吗？让我们回到北站相遇的时候吧，我不介意一切归零重启。</p>
-		<p>听到有人在唱吗:<br>这是怎样的夜晚，让人伤感又留恋<br>如此动情的心愿，怎能让它被吹散</p>
-		<p>姑娘，我看眼前这少年态度诚恳，不如你就再给他一次机会。给他点时间，我相信他会找到合适的方式与你相处的。</p>
-	</div>
-		
-	</div>
-	<script>
-		window.onload=function () {
-			var page3=document.getElementById('page3');
-			var a=page3.getElementsByTagName('a');
-			var title=document.getElementById("title");
-			var pre=document.getElementById("pre");
-			var next=document.getElementById("next");
-			var contianer=document.getElementById("contianer");
-			var conHeight=contianer.offsetHeight;
-			var audio=document.getElementById("audio");
-			var index=1;
+	<div data-role="page"  id="page3" data-theme="b">
+ 	 	<div data-role="header">
+   			<h1>有什么东西永不消逝</h1>
+		</div>
+	   <div data-role="content">
+			<p>茫茫人海遇到一个让我恋恋不忘的人不容易，不想轻易错过。<br/>
+			难道我们在一起丝毫不能唤醒你的温柔的一面吗？我记得即便那个不愉快的周五也有两个场景让我恋恋不忘：看到你久违的笑的时候、递给我纸巾的时候语气分明那么温柔。至少我愿意相信有那么一刻我有很强烈的想靠你更近的想法。<br>
+			有时候我会觉得我们俩本来就应该在一起，我太熟悉你的脸了，看到你就觉得很亲切，就好像是在我们见面以前就认识你了，要是能随时看见你就好了；有时候又会觉得我们之间的距离太遥远，我太不了解你了，我不知道你什么时候在生气，不知道你什么时候需要安慰鼓励。我们之间还隔着很厚的阻碍，需要时间来穿透，缩短我们之间的距离。<br/>
+			无论是如愿以偿还是希望破灭，一定有什么东西永不消逝。</p>
+			<a href="#myPopup" data-rel="popup" class="ui-btn" data-theme="a">还有哦</a>
+
+			<div data-role="popup" id="myPopup" data-theme="a">
 			
-			next.onclick=function(){
-				var dex=index;
-				index++;
-				if (index==5) {index=1}
-				showPage(index,dex);
-				return false;
-			}
-			pre.onclick=function(){
-				var dex=index;
-				index--;
-				if (index==0) {index=4}
-				showPage(index,dex);
-				return false;
-			}
-		}
-		function showPage(index,dex){
-				var idIndex1="page"+index;
-				var idIndex2="page"+dex;
-				var pageIndex1=document.getElementById(idIndex1);
-				var pageIndex2=document.getElementById(idIndex2);
-				pageIndex1.style.display="block";
-				pageIndex2.style.display="none";
-				if (index!=1) {title.style.display="block";} else {title.style.display="none";}
-		}
+				<p>记得我跟你说过的“今晚月色真美”吗？这个四月有一部番就以此命名——《月色真美》。两人之间青涩的恋爱太真实了，总是让我想起你。<br>
+				今天看了《傲慢与偏见》，也许我们之间正在发生男女主之间的故事也说不定哦。<br></p>
+			</div>
+				<!-- <a href="#myPanel" class="ui-btn ui-btn-inline" data-theme="a">还有哦</a>
+				<div data-role="panel" id="myPanel"> 
+					<h2>还有哦</h2>
+					<p>记得我跟你说过的“今晚月色真美”吗？这个四月有一部番就以此命名——《月色真美》。两人之间青涩的恋爱太真实了，总是让我想起你。<br>
+					今天看了《傲慢与偏见》，也许我们之间正在发生男女主之间的故事也说不定哦。<br></p>
+					<a href="#page3" data-rel="close" class="ui-btn ui-btn-inline">关闭</a>
+				</div> -->
+		</div>
+	    <div data-role="footer">
+	     	<a href="#page2"  data-transition="slide">PRE</a>
+			<a href="#page4"  data-transition="slide">NEXT</a>
+	    </div>
+	<div data-role="page"  id="page4" data-theme="b">
+ 	 	<div data-role="header">
+   			<h1>机会</h1>
+		</div>
+	   <div data-role="content" >
+			
+			<p>你会再给我喜欢你的权利吗，愿意再给我半年时间吗？让我们回到北站相遇的时候吧，我不介意一切归零重启。</p>
+			<p>听到有人在唱吗:<br>这是怎样的夜晚，让人伤感又留恋<br>如此动情的心愿，怎能让它被吹散</p>
+			<p>姑娘，我看眼前这少年态度诚恳，不如你就再给他一次机会。给他点时间，我相信他会找到合适的方式与你相处的。</p>
+
+			<div data-role="collapsible">
+			<h1>秘密</h1>
+			<p>一晃四月就要过去了，我从开始听日系伤感音乐到现在听国内的民谣，我想我的心境大概也在悄悄地发生一些改变，或许已经从最开始的难以释怀转变到现在的怀念了吧。但不知为何，喜欢你这个念头还是没有褪去。</p>
+			<p>我之前说我们俩之间没有留下什么值得留恋的回忆，我错了。虽然我们之间没有发生刻骨铭心的感人故事，不过回忆总是停留在那些小事上。所以看到《月色真美》总是会想到我们俩就是那样，在一起的时候不说话，却喜欢在qq上聊天。还喜欢用表情包。</p>
+			<p>跟你接触时间虽然不长，但我确实有一点改变。我发现我更容易站在女生的角度想问题了，虽然总是想的和现实不一样，哈哈:)。还有，我以前和人聊天几乎不用表情的。和你聊天之后我感觉你总是容易误会我的意思，就加上表情避免误解，到现在都已经养成习惯了。</p>
+			</div>
+	    </div>
+	    <div data-role="footer">
+	     	<a href="#page3" data-transition="slide">PRE</a>
+			<a href="#page1" data-transition="slide">NEXT</a>
+	    </div>
+	</div>
+	<!-- <div data-role="page"  id="page5" data-theme="b">
+ 	 	<div data-role="header">
+   			<h1>秘密</h1>
+		</div>
+	   <div data-role="content">
+			<p>一晃四月就要过去了，我从开始听日系伤感音乐到现在听国内的民谣，我想我的心境大概也在悄悄地发生一些改变，或许已经从最开始的难以释怀转变到现在的怀念了吧。但不知为何，喜欢你这个念头还是没有褪去。</p>
+			<p>我之前说我们俩之间没有留下什么值得留恋的回忆，我错了。虽然我们之间没有发生刻骨铭心的感人故事，不过回忆总是停留在那些小事上。所以看到《月色真美》总是会想到我们俩就是那样，在一起的时候不说话，却喜欢在qq上聊天。还喜欢用表情包。</p>
+			<p>跟你接触时间虽然不长，但我确实有一点改变。我发现我更容易站在女生的角度想问题了，虽然总是想的和现实不一样，哈哈:)。还有，我以前和人聊天几乎不用表情的。和你聊天之后我感觉你总是容易误会我的意思，就加上表情避免误解，到现在都已经养成习惯了。</p>
+		</div>
+	    <div data-role="footer">
+	     	<a href="#page4" data-transition="slide">PRE</a>
+			<a href="#page1" data-transition="slide">NEXT</a>
+	    </div>
+	</div> -->
+
+	<script>
 	</script>
 </body>
 
