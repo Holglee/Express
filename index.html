@@ -147,7 +147,7 @@
 <!-- 				  <input type="text" name="fname" id="fname" placeholder="输入密码查看更多秘密"> -->
 				  <label for="password">密码：</label>
         			  <input type="text" name="password" id="password" placeholder="输入密码查看更多秘密"> 
-				  <a href="#" class="ui-btn ui-btn-a">确定</a>
+				  <a href="#" class="ui-btn ui-btn-a" id = "submit">确定</a>
 			  </div>
 			  
 			</div>
@@ -159,6 +159,13 @@
 	</div>
 
 	<script>
+		$(function){
+			$("#submit").on("tap",function(){
+			  if($("password").val() = "09020928"){
+				alert("我哪还有什么秘密啊，都说完了，哈哈。非要说的话就是：君が好きだ");
+			  }
+			});
+		}
 	</script>
 </body>
 
